@@ -13,17 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        
+
 
     }
 
 
-    fun execute(urlstring: String){
-        GlobalScope.launch (Dispatchers.Main){
-            val result = withContext(Dispatchers.10){
-                performApiRequest(urlstring)
-            }
-        }
-    }
+
 
 }
